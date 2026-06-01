@@ -11,6 +11,10 @@
 
 ## Abstract 
 This work proposes and experimentally evaluates the use of UHF RFID technology as a redundant perception layer for traffic sign identification in autonomous mobility systems. Passive UHF RFID tags are integrated into traffic signs and detected using a vehicle-mounted reader system. Results include a safety margin analysis, Bayesian sensor fusion framework, dwell time and Slotted ALOHA protocol analysis, and a simplified FMEA. 
+
+<img width="1961" height="784" alt="RFID" src="https://github.com/user-attachments/assets/81f060b6-618a-40d4-b54e-a10ea66c3e7f" />
+
+
  
 ## Hardware Requirements 
 - Viaonda MID 12-iETH UHF RFID reader antenna (902–928 MHz, 12 dBi, 42° beamwidth) 
