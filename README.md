@@ -40,8 +40,8 @@ This work proposes and experimentally evaluates the use of UHF RFID technology a
 
 ## Installation 
 ```bash 
-git clone [https://github.com/[USERNAME]/rfid-autonomous-mobility ](https://github.com/MarcosAJCoelho/RFIDAutonomousMobility)
-cd rfid-autonomous-mobility 
+git clone [https://github.com/MarcosAJCoelho/RFIDAutonomousMobility]
+cd RFIDAutonomousMobility 
 pip install -r requirements.txt 
 ``` 
 
