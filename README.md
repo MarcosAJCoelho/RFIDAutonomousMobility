@@ -10,17 +10,28 @@
 | Roderval Marcelino | UFSC, Araranguá, SC, Brazil | roderval.marcelino@ufsc.br | 
 
 ## Abstract 
-This work proposes and experimentally evaluates the use of UHF RFID technology as a redundant perception layer for traffic sign identification in autonomous mobility systems. Passive UHF RFID tags are integrated into traffic signs and detected using a vehicle-mounted reader system. Results include a safety margin analysis, Bayesian sensor fusion framework, dwell time and Slotted ALOHA protocol analysis, and a simplified FMEA. 
+This work proposes and experimentally evaluates the use of UHF Radio Frequency Identification (RFID) technology as a redundant perception layer for traffic sign identification in autonomous mobility systems. Passive UHF RFID tags were integrated into traffic signs and detected using a vehicle-mounted reader system. The experimental evaluation was conducted in two stages: controlled bench tests and field tests on a real university campus environment.
+
+Key contributions:
+-Quantitative experimental characterization of RFID-based traffic sign recognition under dynamic and geometric constraints
+-Safety margin analysis combining recognition distance, latency, and vehicle dynamics
+-Bayesian sensor fusion framework parametrized from experimental data
+-Dwell time and Slotted ALOHA protocol analysis under vehicular speeds
+-Simplified Failure Mode and Effects Analysis (FMEA)
 
 <img width="1961" height="784" alt="RFID" src="https://github.com/user-attachments/assets/81f060b6-618a-40d4-b54e-a10ea66c3e7f" />
 
 
  
 ## Hardware Requirements 
-- Viaonda MID 12-iETH UHF RFID reader antenna (902–928 MHz, 12 dBi, 42° beamwidth) 
-- Passive UHF RFID tags — Control ID ABS IP68 
-- Raspberry Pi 3B+ or higher (Linux OS) 
-- Python 3.8+ 
+| Component | Model | Specifications | 
+|--------|------------|-------| 
+| UHF RFID Reader/Antenna | Viaonda MID 12-iETH | 902–928 MHz, 12 dBi gain, 42° beamwidth, TCP/IP
+| RFID Tags | Control ID ABS IP68 | Passive UHF, metallic surface, −30 °C to 80 °C
+| Processing unit | Raspberry Pi 3B+ | Linux OS, Python 3.8+, RPi.GPIO
+| Test vehicle | Standard passenger car | Custom antenna mounting bracket
+
+
 
 ## Repository Contents 
 ### `/data/` 
