@@ -49,8 +49,6 @@ rfid-autonomous-mobility/
 │
 ├── scripts/
 │   ├── rfid_reader.py                 # Main RFID acquisition loop (500 ms polling, TCP/IP)
-│   ├── gui_interface.py               # Real-time graphical interface (Tkinter)
-│   ├── gpio_output.py                 # Raspberry Pi GPIO activation (pins 18, 23, 24)
 │   ├── statistical_analysis.py        # CI, Shapiro-Wilk, Pearson correlation (Tables I, III)
 │   ├── safety_margin_analysis.py      # Stopping distance analysis (Table VI)
 │   ├── aloha_dwell_analysis.py        # Dwell time and ALOHA model (Table V)
@@ -58,10 +56,7 @@ rfid-autonomous-mobility/
 │   └── fmea_table.py                  # FMEA with RPN values (Table VIII)
 │
 └── figures/
-    ├── fig07_antenna_coverage.py      # Generates Fig. 7 — antenna coverage diagram
     └── fig11_fusion_architecture/     # Source files for Fig. 11 — fusion architecture
-        ├── fusion_architecture.svg
-        └── fusion_architecture.png
 ```
 
 ---
@@ -98,24 +93,6 @@ Read rate observations at 10, 20 and 40 km/h from Table IV. Qualitative runs at 
 
 ### `/scripts/rfid_reader.py`
 Main acquisition script. Connects to the Viaonda reader via TCP/IP, implements the 500 ms polling interval, decodes EPC codes, maps them to sign categories, and triggers the corresponding GPIO digital outputs.
-
-**Run on Raspberry Pi with reader connected to local network:**
-```bash
-python scripts/rfid_reader.py --ip 192.168.1.100 --port 5000
-```
-
-### `/scripts/gui_interface.py`
-Real-time graphical user interface. Displays the sign image, priority level (1–3), sign type name, and EPC code for each active detection. Built with Python Tkinter.
-
-```bash
-python scripts/gui_interface.py
-```
-
-### `/scripts/gpio_output.py`
-Configures Raspberry Pi GPIO outputs:
-- GPIO Pin 18 → STOP SIGN
-- GPIO Pin 23 → PEDESTRIAN CROSSING
-- GPIO Pin 24 → 20 km/h SPEED LIMIT
 
 ### `/scripts/statistical_analysis.py`
 Reproduces all statistical results in Tables I and III:
