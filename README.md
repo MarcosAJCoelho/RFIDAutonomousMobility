@@ -32,8 +32,6 @@ This work proposes and experimentally evaluates the use of UHF RFID technology a
 ### `/scripts/` 
 - `rfid_reader.py` — Main acquisition loop. Connects to reader via TCP/IP, implements 500 ms polling interval, decodes EPC codes, triggers GPIO outputs. 
   **Run on Raspberry Pi with reader connected to local network.** 
-- `gui_interface.py` — Real-time graphical interface (Python + Tkinter). Displays sign image, priority level, sign name, and EPC code. 
-- `gpio_output.py` — Configures GPIO pins 18 (STOP), 23 (PED. CROSSING), 24 (20 km/h).
 - `statistical_analysis.py` — Reproduces Tables I and III: mean, SD, 95% CI, Shapiro-Wilk normality test, Pearson correlation. 
 - `safety_margin_analysis.py` — Reproduces Table VI: stopping distance for each speed and deceleration level. 
 - `aloha_dwell_analysis.py` — Reproduces Table V: dwell time model and compound detection probability. 
